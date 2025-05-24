@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<h1> سبحة إلكترونية  </h2>
+<h2> تصميم جرجس خلف </h2>
+        <title>Click Counter</title>
+    </head>
+    <body>
+    <div>
+   <label id="count-label">0</label>  <br>
+<button id="decrease-btn">decrease</button>
+
+ <button id="increase-btn">increase</button>
+ 
+    <button id="reset-btn">reset</button>
+    </div>
+   <script>
+    const countLabel = document.getElementById("count-label");
+    let count = 0;
+   
+document.getElementById("decrease-btn").onclick = function(){
+  count--;
+  countLabel.textContent = count;
+}
+
+document.getElementById("reset-btn").onclick = function(){
+count = 0;
+     countLabel.textContent = count;
+}
+
+document.getElementById("increase-btn").onclick = function(){
+    count++;
+     countLabel.textContent = count;
+}
+   </script>
+    </body>
+</html>
